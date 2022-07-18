@@ -14,5 +14,6 @@ summary: Whitelist requests based on header values
 # This is mandatory,
 # and Traefik Pilot will try to execute the plugin with the configuration you provide as part of its startup validity tests.
 testData:
-  Headers:
-    Foo: Bar
+  Rules:
+  - Key: foo
+    Value: bar
